@@ -3,6 +3,7 @@
 
 A simple library to add indicators for your Carousel or ViewPagers.
 
+<img src="https://github.com/Kshitij-Jain/IndicatorView/blob/master/Screenshots/screen_1.png" width="512">
 ### 
 
 ### Download
@@ -57,6 +58,8 @@ dependencies{
 
 ### Usage
 
+#### Include following code in your layout:
+
 ```
 <io.github.kshitij_jain.indicatorview.IndicatorView
             android:id="@+id/circle_indicator_view"
@@ -66,5 +69,30 @@ dependencies{
             android:layout_gravity="center"/>
 ```
 
+#### Include following code in your activity:
 
+```
+IndicatorView mIndicatorView = (IndicatorView) findViewById(R.id.circle_indicator_view);
+mIndicatorView.setPageIndicators(4);
+mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+       @Override
+       public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+       }
 
+       @Override
+       public void onPageSelected(int position) {
+            mIndicatorView.setCurrentPage(position);
+       }
+
+       @Override
+       public void onPageScrollStateChanged(int state) {
+       }
+});
+```
+
+##### Other supported methods:
+
+```
+ mIndicatorView.setActiveIndicatorColor(R.color.colorAccent); // Set Active Indicator Color
+ mIndicatorView.setInactiveIndicatorColor(R.color.colorPrimary); // Set Inactive Indicator Color
+ ``` 
