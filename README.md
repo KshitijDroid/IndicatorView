@@ -1,14 +1,14 @@
-# IndicatorView {#indicatorview}
+# IndicatorView
 
 A simple library to add indicators for your Carousel or ViewPagers.
 
 ### 
 
-### Download {#download}
+### Download
 
 #### Step 1. Add the JitPack repository to your build file {#step-1-add-the-jitpack-repository-to-your-build-file}
 
-##### Gradle {#gradle}
+##### Gradle
 
 Add it in your root build.gradle at the end of repositories:
 
@@ -22,7 +22,7 @@ allprojects {
 
 ```
 
-##### **Maven** {#maven}
+##### **Maven**
 
 ```
 <repositories>
@@ -33,9 +33,9 @@ allprojects {
 </repositories>
 ```
 
-#### **Step 2.** Add the dependency {#step-2-add-the-dependency}
+#### **Step 2.** Add the dependency
 
-##### Gradle {#gradle}
+##### Gradle
 
 ```
 dependencies{
@@ -44,7 +44,7 @@ dependencies{
 
 ```
 
-##### Maven {#maven}
+##### Maven
 
 ```
 <dependency>
@@ -54,7 +54,7 @@ dependencies{
 </dependency>
 ```
 
-### Usage {#usage}
+### Usage
 
 ```
 <io.github.kshitij_jain.indicatorview.IndicatorView
