@@ -1,4 +1,5 @@
 # IndicatorView
+[![](https://jitpack.io/v/Kshitij-Jain/IndicatorView.svg)](https://jitpack.io/#Kshitij-Jain/IndicatorView)
 
 A simple library to add indicators for your Carousel or ViewPagers.
 
