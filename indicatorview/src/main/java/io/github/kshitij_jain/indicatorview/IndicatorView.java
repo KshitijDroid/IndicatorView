@@ -100,4 +100,24 @@ public class IndicatorView extends View {
         return result;
     }
 
+    public void setCurrentPage(int position) {
+        mPosition = position;
+        invalidate();
+    }
+
+    public void setPageIndicators(int size) {
+        mIndicatorsCount = size;
+        invalidate();
+    }
+
+    public void setInactiveIndicatorColor(@ColorRes int color) {
+        mInactiveIndicatorPaint.setColor(ContextCompat.getColor(mContext, color));
+        invalidate();
+    }
+
+    public void setActiveIndicatorColor(@ColorRes int color) {
+        mActiveIndicatorPaint.setColor(ContextCompat.getColor(mContext, color));
+        invalidate();
+    }
+
 }
