@@ -6,7 +6,7 @@ A simple library to add indicators for your Carousel or ViewPagers.
 
 ### Download
 
-#### Step 1. Add the JitPack repository to your build file {#step-1-add-the-jitpack-repository-to-your-build-file}
+#### Step 1. Add the JitPack repository to your build file
 
 ##### Gradle
 
