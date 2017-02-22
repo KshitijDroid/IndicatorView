@@ -89,6 +89,11 @@ mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
        }
 });
 ```
+##### Supported xml attributes:
+```
+ app:activeColor="@color/colorPrimary" // Set Active Indicator Color
+ app:inactiveColor="@color/colorAccent" // Set Inactive Indicator Color
+ ``` 
 
 ##### Other supported methods:
 
