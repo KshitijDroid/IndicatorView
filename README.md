@@ -1,5 +1,6 @@
 # IndicatorView
 [![](https://jitpack.io/v/Kshitij-Jain/IndicatorView.svg)](https://jitpack.io/#Kshitij-Jain/IndicatorView)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-IndicatorView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5337)
 
 A simple library to add indicators for your Carousel or ViewPagers.
 
