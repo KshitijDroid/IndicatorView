@@ -1,6 +1,7 @@
 package io.github.kshitij_jain.indicatorview;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.support.annotation.ColorRes;
@@ -24,26 +25,33 @@ public class IndicatorView extends View {
 
     public IndicatorView(Context context) {
         super(context);
-        init(context);
     }
 
     public IndicatorView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init(context);
+        init(context, attrs, 0);
     }
 
     public IndicatorView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        init(context);
+        init(context, attrs, defStyle);
     }
 
-    private void init(Context context) {
+    private void init(Context context, AttributeSet attrs, int defStyle) {
         mContext = context;
+        TypedArray a = context.getTheme().obtainStyledAttributes(
+                attrs,
+                R.styleable.IndicatorView,
+                defStyle, 0);
+
+        int activeColor = a.getColor(R.styleable.IndicatorView_activeColor, ContextCompat.getColor(context, R.color.active_indicator));
+        int inactiveColor = a.getColor(R.styleable.IndicatorView_inactiveColor, ContextCompat.getColor(context, R.color.inactive_indicator));
+
         mActiveIndicatorPaint = new Paint();
-        mActiveIndicatorPaint.setColor(ContextCompat.getColor(context, R.color.active_indicator));
+        mActiveIndicatorPaint.setColor(activeColor);
         mActiveIndicatorPaint.setAntiAlias(true);
         mInactiveIndicatorPaint = new Paint();
-        mInactiveIndicatorPaint.setColor(ContextCompat.getColor(context, R.color.inactive_indicator));
+        mInactiveIndicatorPaint.setColor(inactiveColor);
         mInactiveIndicatorPaint.setAntiAlias(true);
         mRadius = getResources().getDimensionPixelSize(R.dimen.indicator_size);
         mSize = mRadius * 2;
