@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CircularIndicatorView.iml" filepath="$PROJECT_DIR$/CircularIndicatorView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IndicatorView.iml" filepath="$PROJECT_DIR$/IndicatorView.iml" />
       <module fileurl="file://$PROJECT_DIR$/indicatorview/indicatorview.iml" filepath="$PROJECT_DIR$/indicatorview/indicatorview.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
     </modules>

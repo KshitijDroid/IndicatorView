@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPagerAdapter mViewPagerAdapter;
     private AppCompatButton mButtonSkip;
     private AppCompatButton mButtonNext;
-    private Integer viewsCount = 5;
+    private Integer viewsCount = 4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         initViews();
 
-        mIndicatorView.setPageIndicators(4);
+        mIndicatorView.setPageIndicators(viewsCount);
 
         setupViewPager();
 
