@@ -41,7 +41,7 @@ allprojects {
 
 ```
 dependencies{
-    compile 'com.github.Kshitij-Jain:IndicatorView:1.0'
+    compile 'com.github.Kshitij-Jain:IndicatorView:1.2'
 }
 
 ```
@@ -52,7 +52,7 @@ dependencies{
 <dependency>
     <groupId>com.github.Kshitij-Jain</groupId>
     <artifactId>IndicatorView</artifactId>
-    <version>1.0</version>
+    <version>1.2</version>
 </dependency>
 ```
 
