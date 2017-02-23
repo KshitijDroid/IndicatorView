@@ -1,4 +1,5 @@
 # IndicatorView
+[![Build Status](https://travis-ci.org/Kshitij-Jain/IndicatorView.svg?branch=master)](https://travis-ci.org/Kshitij-Jain/IndicatorView)
 [![](https://jitpack.io/v/Kshitij-Jain/IndicatorView.svg)](https://jitpack.io/#Kshitij-Jain/IndicatorView)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-IndicatorView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5337)
 
