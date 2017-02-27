@@ -42,7 +42,7 @@ allprojects {
 
 ```
 dependencies{
-    compile 'com.github.Kshitij-Jain:IndicatorView:1.2'
+    compile 'com.github.Kshitij-Jain:IndicatorView:1.25'
 }
 
 ```
@@ -53,7 +53,7 @@ dependencies{
 <dependency>
     <groupId>com.github.Kshitij-Jain</groupId>
     <artifactId>IndicatorView</artifactId>
-    <version>1.2</version>
+    <version>1.25</version>
 </dependency>
 ```
 
@@ -94,6 +94,7 @@ mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 ```
  app:activeColor="@color/colorPrimary" // Set Active Indicator Color
  app:inactiveColor="@color/colorAccent" // Set Inactive Indicator Color
+ app:indicatorSize="6dp" // Set Indicator Size (Default 8dp)
  ``` 
 
 ##### Other supported methods:
