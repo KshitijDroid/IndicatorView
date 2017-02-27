@@ -18,7 +18,7 @@ public class IndicatorView extends View {
     private Context mContext;
     private Paint mActiveIndicatorPaint;
     private Paint mInactiveIndicatorPaint;
-    private int mRadius;
+    private int mDiameter;
     private int mSize;
     private int mPosition;
     private int mIndicatorsCount;
@@ -46,6 +46,7 @@ public class IndicatorView extends View {
 
         int activeColor = a.getColor(R.styleable.IndicatorView_activeColor, ContextCompat.getColor(context, R.color.active_indicator));
         int inactiveColor = a.getColor(R.styleable.IndicatorView_inactiveColor, ContextCompat.getColor(context, R.color.inactive_indicator));
+        int indicatorSize = a.getDimensionPixelSize(R.styleable.IndicatorView_indicatorSize, getResources().getDimensionPixelSize(R.dimen.indicator_size));
 
         mActiveIndicatorPaint = new Paint();
         mActiveIndicatorPaint.setColor(activeColor);
@@ -53,17 +54,17 @@ public class IndicatorView extends View {
         mInactiveIndicatorPaint = new Paint();
         mInactiveIndicatorPaint.setColor(inactiveColor);
         mInactiveIndicatorPaint.setAntiAlias(true);
-        mRadius = getResources().getDimensionPixelSize(R.dimen.indicator_size);
-        mSize = mRadius * 2;
+        mDiameter = indicatorSize;
+        mSize = mDiameter * 2;
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         for (int i = 0; i < mIndicatorsCount; i++) {
-            canvas.drawCircle(mRadius + (mSize * i), mRadius, mRadius / 2, mInactiveIndicatorPaint);
+            canvas.drawCircle(mDiameter + (mSize * i), mDiameter, mDiameter / 2, mInactiveIndicatorPaint);
         }
-        canvas.drawCircle(mRadius + (mSize * mPosition), mRadius, mRadius / 2, mActiveIndicatorPaint);
+        canvas.drawCircle(mDiameter + (mSize * mPosition), mDiameter, mDiameter / 2, mActiveIndicatorPaint);
     }
 
     @Override
@@ -100,7 +101,7 @@ public class IndicatorView extends View {
         if (specMode == MeasureSpec.EXACTLY) {
             result = specSize;
         } else {
-            result = 2 * mRadius + getPaddingTop() + getPaddingBottom();
+            result = 2 * mDiameter + getPaddingTop() + getPaddingBottom();
             if (specMode == MeasureSpec.AT_MOST) {
                 result = Math.min(result, specSize);
             }

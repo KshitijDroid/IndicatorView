@@ -2,8 +2,9 @@
 <resources>
 
     <declare-styleable name="IndicatorView">
-    <attr name="activeColor" format="color" />
-    <attr name="inactiveColor" format="color" />
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="indicatorSize" format="dimension" />
     </declare-styleable>
 
 </resources>
