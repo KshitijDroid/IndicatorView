@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         mButtonSkip = (AppCompatButton) findViewById(R.id.button_skip);
         mButtonNext = (AppCompatButton) findViewById(R.id.button_next);
-        mIndicatorView = (IndicatorView) findViewById(R.id.circle_indicator_view);
+        mIndicatorView = (IndicatorView) findViewById(R.id.indicator_view);
     }
 
     private void setupViewPager() {

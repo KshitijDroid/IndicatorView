@@ -29,12 +29,13 @@
             android:textColor="@android:color/white"/>
 
         <io.github.kshitij_jain.indicatorview.IndicatorView
-            android:id="@+id/circle_indicator_view"
+            android:id="@+id/indicator_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             app:activeColor="@color/colorPrimary"
             app:inactiveColor="@color/colorAccent"
+            app:indicatorSize="@dimen/activity_horizontal_margin"
             android:layout_gravity="center"/>
 
         <android.support.v7.widget.AppCompatButton
